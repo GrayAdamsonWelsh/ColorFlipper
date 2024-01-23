@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Flipper</title>
 </head>
-<body>
-    <button>Change Colour</button>
-    <script></script>
+<body id="bdy">
+    <button onclick="btnPressed()">Change Colour</button>
+    <script>
+        let arrCol = ["red", "yellow", "blue"];
+
+        let intColSize = arrCol.length;
+        let intCol= 0;
+
+        function btnPressed() {
+            document.getElementById("bdy").style.backgroundColor = arrCol[intCol];
+            intCol++;
+            if (intCol > intColSize){
+                intCol = 0;
+            }
+        }
+    </script>
 </body>
 </html>
