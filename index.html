@@ -6,20 +6,8 @@
     <title>Color Flipper</title>
 </head>
 <body id="bdy">
-    <button onclick="btnPressed()">Change Colour</button>
-    <script>
-        let arrCol = ["red", "yellow", "blue"];
-
-        let intColSize = arrCol.length;
-        let intCol= 0;
-
-        function btnPressed() {
-            document.getElementById("bdy").style.backgroundColor = arrCol[intCol];
-            intCol++;
-            if (intCol > intColSize){
-                intCol = 0;
-            }
-        }
+    <button type="submit">Change Colour</button>
+    <script src="assets/js/idex.js">
     </script>
 </body>
 </html>
